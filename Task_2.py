@@ -18,7 +18,7 @@ def prod_pairs_numb(lst: list):
     i_start = 0
     i_end = len(lst)-1
     prod = 0
-    while i_start < i_end:
+    while i_start <= i_end:
         prod = lst[i_start] * lst[i_end]
         prod_pairs.append(prod)
         i_start += 1
