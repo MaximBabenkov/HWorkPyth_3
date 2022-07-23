@@ -14,9 +14,8 @@ def create_list(size: int, min_value: int, max_value: int):
 
 def summ_odd_pos(list: list):
     summ = 0
-    for i in range(len(list)):
-        if i % 2 != 0:
-            summ += list[i]
+    for i in range(1, len(list), 2):        
+        summ += list[i]
     return summ
 
 amount = int(input('Enter amount of items in your list: '))
